@@ -26,8 +26,8 @@ export class ProveedoresComponent implements OnInit {
   };
 
   Items: Proveedor[] = null;
-  RegistrosTotal: number;
-  Pagina = 1; // inicia pagina 1
+  //RegistrosTotal: number;
+  //Pagina = 1; // inicia pagina 1 29 30
   submitted: boolean = false;
 
   // opciones del combo activo
