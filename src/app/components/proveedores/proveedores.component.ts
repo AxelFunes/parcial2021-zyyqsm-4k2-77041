@@ -14,9 +14,6 @@ export class ProveedoresComponent implements OnInit {
   Titulo = 'Proveedores';
   TituloAccionABMC = {
     A: '(Agregar)',
-    B: '(Eliminar)',
-    M: '(Modificar)',
-    C: '(Consultar)',
     L: '(Listado)'
   };
   AccionABMC = 'L'; // inicialmente inicia en el listado de articulos (buscar con parametros)
@@ -26,8 +23,6 @@ export class ProveedoresComponent implements OnInit {
   };
 
   Items: Proveedor[] = null;
-  //RegistrosTotal: number;
-  //Pagina = 1; // inicia pagina 1 29 30
   submitted: boolean = false;
 
   // opciones del combo activo
