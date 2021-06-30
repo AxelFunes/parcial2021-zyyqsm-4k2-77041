@@ -79,13 +79,6 @@ export class ProveedoresComponent implements OnInit {
       });
   }
 
-  // Obtengo un registro especifico según el Id
-  // BuscarPorId(Dto, AccionABMC) {
-  //   window.scroll(0, 0); // ir al incio del scroll
-  //   this.AccionABMC = AccionABMC;
-  // }
-  // Obtengo un registro especifico según el Id
-
   // grabar tanto altas como modificaciones
   Grabar() {
     this.submitted = true;
@@ -120,9 +113,5 @@ export class ProveedoresComponent implements OnInit {
   // Volver desde Agregar/Modificar
   Volver() {
     this.AccionABMC = 'L';
-  }
-
-  ImprimirListado() {
-    this.modalDialogService.Alert('Sin desarrollar...');
   }
 }
