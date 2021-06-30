@@ -31,11 +31,6 @@ export class ProveedoresComponent implements OnInit {
   submitted: boolean = false;
 
   // opciones del combo activo
-  OpcionesActivo = [
-    { Id: null, Nombre: '' },
-    { Id: true, Nombre: 'SI' },
-    { Id: false, Nombre: 'NO' }
-  ];
 
   FormBusqueda: FormGroup;
   FormRegistro: FormGroup;
@@ -67,6 +62,7 @@ export class ProveedoresComponent implements OnInit {
         ]
       ]
     });
+    this.Buscar();
   }
 
   Agregar() {

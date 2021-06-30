@@ -83,7 +83,7 @@
 <!-- Registro en Alta,Modificacion o Consulta -->
 <form name="FormRegistro" *ngIf="AccionABMC != 'L'" [formGroup]="FormRegistro">
   <fieldset [disabled]="AccionABMC==='C'">
-    <!--campo nombre-->
+    <!--campo Razon social-->
     <div class="form-group row">
       <label
         class="col-form-label col-sm-2 offset-sm-2"
@@ -112,7 +112,7 @@
       </div>
     </div>
 
-    <!--campo codigodebarra-->
+    <!--campo Codigo proveedor-->
     <div class="form-group row">
       <label class="col-form-label col-sm-2 offset-sm-2" for="ProveedorCodigo">
         Codigo De Proveedor <span class="text-danger">*</span>
@@ -140,7 +140,7 @@
       </div>
     </div>
 
-    <!--campo fechaalta-->
+    <!--campo Fecha Proveedor-->
     <div class="form-group row">
       <label class="col-form-label col-sm-2 offset-sm-2">
         Fecha de Proveedor <span class="text-danger">*</span>
