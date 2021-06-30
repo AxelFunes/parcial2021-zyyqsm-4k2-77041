@@ -70,13 +70,9 @@ export class ProveedoresComponent implements OnInit {
   // Buscar segun los filtros, establecidos en FormRegistro
   Buscar() {
     //this.modalDialogService.BloquearPantalla();
-    this.proveedoresService
-      .get()
-      //this.articulosService.get("", null, this.Pagina)
-      .subscribe((res: any) => {
-        this.Items = res;
-        //this.modalDialogService.DesbloquearPantalla();
-      });
+    this.proveedoresService.get().subscribe((res: any) => {
+      this.Items = res;
+    });
   }
 
   // grabar tanto altas como modificaciones
@@ -105,7 +101,6 @@ export class ProveedoresComponent implements OnInit {
         this.Volver();
         this.modalDialogService.Alert('Registro agregado correctamente.');
         this.Buscar();
-        //this.modalDialogService.DesbloquearPantalla();
       });
     }
   }
